@@ -1,0 +1,67 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+
+body{
+   font-family: 'Roboto Slab',
+   serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header {
+    background: rgb(69, 112, 137);
+    background: -moz-linear-gradient(140deg, rgba(69, 112, 137, 1) 0%, rgba(81, 169, 156, 1) 100%);
+    background: -webkit-linear-gradient(140deg, rgba(69, 112, 137, 1) 0%, rgba(81, 169, 156, 1) 100%);
+    background: linear-gradient(140deg, rgba(69, 112, 137, 1) 0%, rgba(81, 169, 156, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#457089", endColorstr="#51a99c", GradientType=1);
+    color: white;
+    overflow: hidden;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-top: 50px;
+    &__link {
+        display: block;
+        background-image: url('../img/svg/Logo.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 130px;
+        height: 28px;
+    }
+    &__menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        &-item {
+            margin-left: 15px;
+        }
+    }
+}
+.book {
+    margin-top: 180px;
+    &__img {
+        background-image: url('../img/svg/book.svg');
+        width: 448px;
+        height: 639px; 
+    }
+
+}
+
